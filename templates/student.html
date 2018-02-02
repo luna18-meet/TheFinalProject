@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../static/scripts/home.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/stylesheets/home.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css"></style>
+</head>
+<body>
+
+<div class="projectTitle"><div class="Topic">Time Manager</div></div>
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li><a href="{{url_for('about')}}"><span class="glyphicon glyphicon-heart-empty"></span>  About</a></li>
+      <li><a class="active" href="{{url_for('student')}}"><span class="glyphicon glyphicon-education"></span> Student Council</a></li>
+      <li><a href="{{url_for('managment')}}"><span class="glyphicon glyphicon-th"></span>  Managing in General</a></li>
+      <li><a href="{{url_for('time')}}"><span class="glyphicon glyphicon-dashboard"></span>  How to Manage Your Time</a></li>
+      <li><a href="{{url_for('comments')}}"><span class="glyphicon glyphicon-comment"></span> Comments</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+<header>
+<h2 class="title"> Student Counil</h2></header><p class="paragraph">
+A student council (also known as a student union or associated student body) is a curricular or extracurricular activity for students within elementary and secondary schools around the world. These councils are present in most public and private K-12 school systems across the United States, Canada, Australia and Asia. Student councils often serve to engage students in learning about democracy and leadership, as originally espoused by John Dewey in Democracy and Education (1917).
+<br>The student council helps share students’ ideas, interests, and concerns with teachers and school principals. They often also help raise funds for school-wide activities, including social events, community projects, helping people in need and school reform. Most schools participate in food drives, fundraisers and parties. Many members learn skills that were an extension of their formal education.<br>
+Student councils operate in many forms. There are representative-based and modeled loosely after the U.S. Congress, or based on the Executive Branch of the United States, with a President, Vice-President, secretary, treasurer, and reporter. In this form student representatives and officers are usually elected from and by the student body, although there may be prerequisites for candidacy or suffrage. In elementary schools, there are typically one or two student representatives per classroom and one presiding set of officers. However, many secondary schools have one set of officers per grade level</p><center><img src="{{url_for('static', filename='council.png')}}" width="400" height="200"></center></p>
+</p></div></atricle></div>
+</body>
+</html>

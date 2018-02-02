@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../static/scripts/home.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/stylesheets/home.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css"></style>
+</head>
+<body>
+
+<div class="projectTitle"><div class="Topic">Time Manager</div></div>
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li><a href="{{url_for('about')}}"><span class="glyphicon glyphicon-heart-empty"></span>  About</a></li>
+      <li><a class="active" href="{{url_for('student')}}"><span class="glyphicon glyphicon-education"></span> Student Council</a></li>
+      <li><a href="{{url_for('managment')}}"><span class="glyphicon glyphicon-th"></span>  Managing in General</a></li>
+      <li><a href="{{url_for('time')}}"><span class="glyphicon glyphicon-dashboard"></span>  How to Manage Your Time</a></li>
+      <li><a href="{{url_for('comments')}}"><span class="glyphicon glyphicon-comment"></span> Comments</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container">
+<header>
+
+<h2 class="title"> Comments Section!</h2>
+
+</header>
+<form>
+
+<div class="form-group">
+  <label for="name" >Name </label>
+  <input id="commentName" class="form-control" placeholder="Enter Username" type="text" name="name">
+
+  <label for="title">Title </label>
+  <input id="commentTitle" class="form-control" placeholder="Enter Title"  type= "text" name="title">
+
+  <label for="content">Content </label>
+  <input id="commentContent" class="form-control" placeholder="Enter Content"  type="textarea" name="content">
+
+  <input type="button"  id="addCommentBtn" class="form-control btn btn-primary" value="Add Comment" style="margin-top:5px">
+
+</div>
+</form>
+
+
+<ul class="list-group">
+
+  {% for comment in comments %}
+  <a class="list-group-item list-group-item-action flex-column align-items-start" style="margin-top:5px">
+      
+      <div  style="position:absolute; top:5px; right:5px;">
+    
+        <button id="{{comment.id}}" class="deleteButton btn btn-danger">X</button>
+      </div>
+
+     <div class="d-flex w-100 justify-content-between">
+
+      <span class="glyphicon glyphicon-user"> </span>  {{comment.user}}
+      <h4 style="color:#333" class="mb-1">{{comment.title}}</h4>
+      <hr style="margin:0">
+    </div>
+    <p class="mb-1">{{comment.content}}</p>
+  </a>
+  {% endfor %}
+
+</ul>
+
+</div>
+
+</body>
+</html>

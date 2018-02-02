@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../static/scripts/home.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/stylesheets/home.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css"></style>
+</head>
+<body>
+
+<div class="projectTitle"><div class="Topic">Time Manager</div></div>
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li><a href="{{url_for('about')}}"><span class="glyphicon glyphicon-heart-empty"></span>  About</a></li>
+      <li><a class="active" href="{{url_for('student')}}"><span class="glyphicon glyphicon-education"></span> Student Council</a></li>
+      <li><a href="{{url_for('managment')}}"><span class="glyphicon glyphicon-th"></span>  Managing in General</a></li>
+      <li><a href="{{url_for('time')}}"><span class="glyphicon glyphicon-dashboard"></span>  How to Manage Your Time</a></li>
+      <li><a href="{{url_for('comments')}}"><span class="glyphicon glyphicon-comment"></span> Comments</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+<header>
+<h2 class="title"> How Can I Manage My Time?</h2></header>
+<h4>Why use time management skills?</h4><div><p class="paragraph">
+It's important that you develop effective strategies for managing your time to balance the conflicting demands of time for study, leisure, earning money and jobhunting. Time management skills are valuable in jobhunting, but also in many other aspects of life: from revising for examinations to working in a vacation job. Sometimes it may seem that there isn't enough time to do everything that you need to. This can lead to a build up of stress. When revising for examinations, or during your final year when you have to combine the pressures of intensive study with finding time to apply for jobs good management of your time can be particularly important. Once we have identified ways in which we can improve the management of our time, we can begin to adjust our routines and patterns of behaviour to reduce any time-related stress in our lives. 
+<br>
+<center><img src="{{url_for('static', filename='time.jpg')}}" width="400" height="200"></center></p>
+<h4>What skills are required for effective time management?</h4><div><p class="paragraph">
+Some of these skills including setting clear goals, breaking your goals down into discreet steps, and reviewing your progress towards your goals are covered in Action Planning.
+Other skills involved include prioritising - focusing on urgent and important tasks rather than those that are not important or don't move you towards your goals; organising your work schedule; list making to remind you of what you need to do when; persevering when things are not working out and avoiding procrastination. </p>
+<h4>Keeping a to-do List:</h4><p class="paragraph">
+You should have a reminder system to tell you of when you need to do what: don't try to remember everything in your head as this is a recipe for disaster! Carry a pen and paper or organiser wherever you go. At the simplest level your reminder system could simply be to use your diary to write down the things you need to do, including appointments and deadlines. Before interviews, it's fine to write down the questions you wish to ask on a small piece of card or notepad
+
+"To stay on schedule I devised a timetable which I had to stick to. I used an electronic calendar which I programmed to send out emails as reminders to myself and my team. This was a very useful tool and it is one that I have used continuously to manage my time effectively." Kent student.
+
+A daily list of tasks that need to be done is an essential part of action planning. Refer to and update this regularly. Prioritise items on the list into important/not important and urgent/non-urgent. Such a list can take a variety of formats but an example is given to the right. Update your list daily, crossing off completed tasks and adding new tasks that need to be done. Urgent or important tasks can be highlighted with an asterisk.
+<center><img src="{{url_for('static', filename='todo.jpg')}}" width="400" height="200"></center></p>
+
+
+</p></div></atricle></div>
+</body>
+</html>
