@@ -26,10 +26,10 @@
 }
 
 
-
 .container { 
 
-	background-color:	#fafafa;
+	background-image: url("/static/back.jpg");
+	background-repeat: no-repeat;
 }
 
 body, html {
@@ -42,7 +42,6 @@ body{
 	background-color: #eee;
 }
 
-/* Style tab links */
 .tablink {
   background-color: pink;
   color: white;
@@ -59,7 +58,6 @@ body{
   background-color: #777;
 }
 
-/* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
   color: white;
   display: none;
